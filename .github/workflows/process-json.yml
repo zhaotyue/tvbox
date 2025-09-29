@@ -36,27 +36,29 @@ jobs:
           # 过滤sites列表
           data['sites'] = [site for site in data['sites'] if site['key'] not in remove_keys]
           
-          # 读取live.json文件内容
-          try:
-              with open('TVBoxOSC/tvbox/live.json', 'r', encoding='utf-8') as f:
-                  live_data = json.load(f)
-                  
-              # 添加live内容到json中
-              if 'lives' not in data:
-                  data['lives'] = []
-              
-              # 将live.json的内容合并到主json文件中
-              if isinstance(live_data, list):
-                  data['lives'].extend(live_data)
-              elif isinstance(live_data, dict):
-                  data['lives'].append(live_data)
-                  
-          except FileNotFoundError:
-              print("live.json file not found, skipping live content addition")
-          except json.JSONDecodeError:
-              print("Error: live.json is not a valid JSON file")
-          except Exception as e:
-              print(f"Error processing live.json: {str(e)}")
+          # 添加直播源
+          live_data = {
+              "lives": [
+                  {
+                      "name": "bingcha",
+                      "type": 0,
+                      "url": "https://fy.188766.xyz/?ip=&mishitong=true&mima=mianfeidehaimaiqian&haiwai=true"
+                  },
+                  {
+                      "name": "catvod",
+                      "type": 0,
+                      "url": "https://iptv.catvod.com/tv.m3u"
+                  },
+                  {
+                      "name": "catvod(备用)",
+                      "type": 0,
+                      "url": "https://live.catvod.com/tv.m3u"
+                  }
+              ]
+          }
+          
+          # 将live数据添加到主数据中
+          data['lives'] = live_data['lives']
           
           # 写入新文件
           with open('TVBoxOSC/tvbox/xs.json', 'w', encoding='utf-8') as f:

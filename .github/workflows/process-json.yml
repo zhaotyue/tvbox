@@ -36,25 +36,29 @@ jobs:
           # 过滤sites列表
           data['sites'] = [site for site in data['sites'] if site['key'] not in remove_keys]
           
-          # 读取live.txt文件内容
+          # 读取live.json文件内容
           try:
               with open('TVBoxOSC/tvbox/live.json', 'r', encoding='utf-8') as f:
-                  live_content = f.read().strip()
+                  live_data = json.load(f)
                   
-              # 添加live内容到json中
+              # 确保data中有lives字段
               if 'lives' not in data:
                   data['lives'] = []
-                  
-              # 添加live内容作为一个新的条目
-              data['lives'].append({
-                  "name": "live",
-                  "type": 0,
-                  "url": live_content
-              })
+              
+              # 处理live.json内容并添加到data中
+              if isinstance(live_data, list):
+                  # 如果是列表，直接扩展lives列表
+                  data['lives'].extend(live_data)
+              elif isinstance(live_data, dict):
+                  # 如果是单个字典对象，添加为一个项
+                  data['lives'].append(live_data)
+              
           except FileNotFoundError:
-              print("live.txt file not found, skipping live content addition")
+              print("live.json file not found, skipping live content addition")
+          except json.JSONDecodeError:
+              print("Error: live.json is not a valid JSON file")
           except Exception as e:
-              print(f"Error processing live.txt: {str(e)}")
+              print(f"Error processing live.json: {str(e)}")
           
           # 写入新文件
           with open('TVBoxOSC/tvbox/xs.json', 'w', encoding='utf-8') as f:

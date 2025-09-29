@@ -1,4 +1,5 @@
-"lives": [
+{
+    "lives": [
         {
             "name": "bingcha",
             "type": 0,
@@ -15,3 +16,4 @@
             "url": "https://live.catvod.com/tv.m3u"
         }
     ]
+}

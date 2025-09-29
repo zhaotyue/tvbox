@@ -2282,12 +2282,5 @@
     ],
     "ads": [
         "static-mozai.4gtv.tv"
-    ],
-    "lives": [
-        {
-            "name": "live",
-            "type": 0,
-            "url": "\"lives\": [\n        {\n            \"name\": \"bingcha\",\n            \"type\": 0,\n            \"url\": \"https://fy.188766.xyz/?ip=&mishitong=true&mima=mianfeidehaimaiqian&haiwai=true\"\n        },\n        {\n            \"name\": \"catvod\",\n            \"type\": 0,\n            \"url\": \"https://iptv.catvod.com/tv.m3u\"\n        },\n        {\n            \"name\": \"catvod(备用)\",\n            \"type\": 0,\n            \"url\": \"https://live.catvod.com/tv.m3u\"\n        }\n    ]"
-        }
     ]
 }

@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'TVBoxOSC/tvbox/api.json'
+      - 'TVBoxOSC/tvbox/live.json'  # 添加对live.json的监控
   workflow_dispatch:
 
 jobs:
@@ -36,29 +37,24 @@ jobs:
           # 过滤sites列表
           data['sites'] = [site for site in data['sites'] if site['key'] not in remove_keys]
           
-          # 添加直播源
-          live_data = {
-              "lives": [
-                  {
-                      "name": "bingcha",
-                      "type": 0,
-                      "url": "https://fy.188766.xyz/?ip=&mishitong=true&mima=mianfeidehaimaiqian&haiwai=true"
-                  },
-                  {
-                      "name": "catvod",
-                      "type": 0,
-                      "url": "https://iptv.catvod.com/tv.m3u"
-                  },
-                  {
-                      "name": "catvod(备用)",
-                      "type": 0,
-                      "url": "https://live.catvod.com/tv.m3u"
-                  }
-              ]
-          }
-          
-          # 将live数据添加到主数据中
-          data['lives'] = live_data['lives']
+          # 读取live.json文件内容
+          try:
+              with open('TVBoxOSC/tvbox/live.json', 'r', encoding='utf-8') as f:
+                  live_content = json.load(f)
+                  
+              # 确保live_content中的"lives"数组存在并且格式正确
+              if isinstance(live_content, dict) and 'lives' in live_content:
+                  # 添加或替换lives内容
+                  data['lives'] = live_content['lives']
+              else:
+                  print("Error: live.json does not contain the expected 'lives' array")
+                  
+          except FileNotFoundError:
+              print("live.json file not found, skipping live content addition")
+          except json.JSONDecodeError:
+              print("Error: live.json is not a valid JSON file")
+          except Exception as e:
+              print(f"Error processing live.json: {str(e)}")
           
           # 写入新文件
           with open('TVBoxOSC/tvbox/xs.json', 'w', encoding='utf-8') as f:

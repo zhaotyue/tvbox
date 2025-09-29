@@ -41,18 +41,16 @@ jobs:
               with open('TVBoxOSC/tvbox/live.json', 'r', encoding='utf-8') as f:
                   live_data = json.load(f)
                   
-              # 确保data中有lives字段
+              # 添加live内容到json中
               if 'lives' not in data:
                   data['lives'] = []
               
-              # 处理live.json内容并添加到data中
+              # 将live.json的内容合并到主json文件中
               if isinstance(live_data, list):
-                  # 如果是列表，直接扩展lives列表
                   data['lives'].extend(live_data)
               elif isinstance(live_data, dict):
-                  # 如果是单个字典对象，添加为一个项
                   data['lives'].append(live_data)
-              
+                  
           except FileNotFoundError:
               print("live.json file not found, skipping live content addition")
           except json.JSONDecodeError:

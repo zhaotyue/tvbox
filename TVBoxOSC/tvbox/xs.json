@@ -2287,7 +2287,8 @@
         {
             "name": "bingcha",
             "type": 0,
-            "url": "https://fy.188766.xyz/?ip=&mishitong=true&mima=mianfeidehaimaiqian"
+            "ua": "okHttp",
+            "url": "https://fy.188766.xyz/?ip=&mishitong=true&mima=mianfeidehaimaiqian&haiwai=true"
         },
         {
             "name": "catvod",

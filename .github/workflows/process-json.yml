@@ -1,0 +1,45 @@
+name: 处理 JSON 文件
+
+on:
+  push:
+    paths:
+      - 'TVBoxOSC/tvbox/api.json'
+  workflow_dispatch:
+
+jobs:
+  process-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v2
+
+      - name: 设置 Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: 处理 JSON 文件
+        run: |
+          import json
+          import os
+
+          # 读取原始 JSON 文件
+          with open('TVBoxOSC/tvbox/api.json', 'r', encoding='utf-8') as f:
+              data = json.load(f)
+
+          # 过滤掉不需要的项目
+          remove_keys = ['预告', '本地', '配置中心']
+          data['sites'] = [site for site in data['sites'] if site['key'] not in remove_keys]
+
+          # 将处理后的数据写入新文件
+          with open('TVBoxOSC/tvbox/xs.json', 'w', encoding='utf-8') as f:
+              json.dump(data, f, ensure_ascii=False, indent=4)
+        shell: python
+
+      - name: 提交更改
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add TVBoxOSC/tvbox/xs.json
+          git commit -m "自动更新 xs.json" || exit 0
+          git push

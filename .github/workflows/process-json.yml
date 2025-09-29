@@ -38,7 +38,7 @@ jobs:
           
           # 读取live.txt文件内容
           try:
-              with open('TVBoxOSC/tvbox/live.txt', 'r', encoding='utf-8') as f:
+              with open('TVBoxOSC/tvbox/live.json', 'r', encoding='utf-8') as f:
                   live_content = f.read().strip()
                   
               # 添加live内容到json中

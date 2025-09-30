@@ -42,6 +42,7 @@ jobs:
           rm -rf temp_download
 
       - name: Check and commit changes
+        id: commit
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -52,6 +53,15 @@ jobs:
             git commit -m "Update: 更新单线路文件 $(date '+%Y-%m-%d %H:%M:%S')"
             git push
             echo "更新已推送到仓库"
+            echo "::set-output name=changes_detected::true"
           else
             echo "没有检测到文件变更"
+            echo "::set-output name=changes_detected::false"
           fi
+
+      - name: Trigger process-json workflow
+        if: steps.commit.outputs.changes_detected == 'true'
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: process-json.yml
+          token: ${{ secrets.GITHUB_TOKEN }}

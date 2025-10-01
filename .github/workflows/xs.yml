@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   # 定时运行
   schedule:
-        - cron: '0 0 * * *'  # 每天运行一次
+    - cron: '0 0 * * *'  # 每天运行一次
 
 jobs:
   download-and-update:
@@ -41,8 +41,51 @@ jobs:
           cd ..
           rm -rf temp_download
 
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          
+      - name: Process JSON
+        run: |
+          import json
+          import os
+          
+          # 读取源文件
+          with open('TVBoxOSC/tvbox/api.json', 'r', encoding='utf-8') as f:
+              data = json.load(f)
+          
+          # 需要移除的key列表  
+          remove_keys = ['预告', '本地', '配置中心', '小斑快映', '玩偶哥哥', '木偶', '蜡笔', '至臻', '多多', '欧哥', '二小', '虎斑', '雷鲸', '海绵', '夸父', '趣盘', '双星', '人人', '糖果', '夸克盘搜', 'UC盘搜', '天翼盘搜', '123盘搜', '百度盘搜', '百酷', '米搜', '酷乐搜索', '爱看搜索', '鬼鬼搜索', '夸克推送', 'UC推送', '天翼推送', '123推送', '百度推送', '荐片', '七味', '80S', 'New6v', '美剧迷', '迅雷吧', '电影港', '狐狸君', 'Mp4电影', '美剧天堂', '电影天堂', '夸克云盘', 'UC', '百度云盘', 'AList', '版本信息', 'push_agent']
+          
+          # 过滤sites列表
+          data['sites'] = [site for site in data['sites'] if site['key'] not in remove_keys]
+          
+          # 读取live.json文件内容
+          try:
+              with open('TVBoxOSC/tvbox/live.json', 'r', encoding='utf-8') as f:
+                  live_content = json.load(f)
+                  
+              # 确保live_content中的"lives"数组存在并且格式正确
+              if isinstance(live_content, dict) and 'lives' in live_content:
+                  # 添加或替换lives内容
+                  data['lives'] = live_content['lives']
+              else:
+                  print("Error: live.json does not contain the expected 'lives' array")
+                  
+          except FileNotFoundError:
+              print("live.json file not found, skipping live content addition")
+          except json.JSONDecodeError:
+              print("Error: live.json is not a valid JSON file")
+          except Exception as e:
+              print(f"Error processing live.json: {str(e)}")
+          
+          # 写入新文件
+          with open('TVBoxOSC/tvbox/xs.json', 'w', encoding='utf-8') as f:
+              json.dump(data, f, ensure_ascii=False, indent=4)
+        shell: python
+
       - name: Check and commit changes
-        id: commit
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -50,18 +93,9 @@ jobs:
           if [[ -n "$(git status --porcelain)" ]]; then
             echo "检测到文件变更，提交更新..."
             git add .
-            git commit -m "Update: 更新单线路文件 $(date '+%Y-%m-%d %H:%M:%S')"
+            git commit -m "Update: 更新文件 $(date '+%Y-%m-%d %H:%M:%S')"
             git push
             echo "更新已推送到仓库"
-            echo "::set-output name=changes_detected::true"
           else
             echo "没有检测到文件变更"
-            echo "::set-output name=changes_detected::false"
           fi
-
-      - name: Trigger process-json workflow
-        if: steps.commit.outputs.changes_detected == 'true'
-        uses: benc-uk/workflow-dispatch@v1
-        with:
-          workflow: process-json.yml
-          token: ${{ secrets.GITHUB_TOKEN }}

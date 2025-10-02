@@ -1986,9 +1986,10 @@
     ],
     "lives": [
         {
-            "name": "bingcha",
+            "name": "冰茶",
             "type": 0,
-            "url": "https://fy.188766.xyz/?ip=&mishitong=true&mima=mianfeidehaimaiqian"
+            "url": "https://fy.188766.xyz/?ip=&mishitong=true&mima=mianfeidehaimaiqian&json=true",
+            "ua": "bingcha/1.1"
         },
         {
             "name": "catvod",

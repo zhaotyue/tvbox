@@ -57,6 +57,12 @@
 			"api": "https://tvbot.ggff.net/yongle"
 		},
 		{
+			"key": "m1905",
+			"name": "m1905",
+			"type": 4,
+			"api": "https://learnpython.ggff.net/m1905"
+		},
+		{
 			"key": "直播频道",
 			"name": "直播频道",
 			"type": 4,
@@ -132,7 +138,7 @@
 			"key": "py_hstv",
 			"name": "🔞HSTV",
 			"type": 4,
-			"api": "https://learnpython.ggff.net/hstv",
+			"api": "https://learnpython.ggff.net/hsTV",
 			"searchable": 1,
 			"quickSearch": 0,
 			"filterable": 0,

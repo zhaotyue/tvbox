@@ -57,12 +57,6 @@
 			"api": "https://tvbot.ggff.net/yongle"
 		},
 		{
-			"key": "rbzj",
-			"name": "rbzj",
-			"type": 4,
-			"api": "https://learnpython.ggff.net/rbzj"
-		},
-		{
 			"key": "直播频道",
 			"name": "直播频道",
 			"type": 4,

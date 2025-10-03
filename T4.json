@@ -85,7 +85,7 @@
       },
       "api": "csp_GM",
       "ext": {
-        "userScript": "https://github.com/CatVodSpider-GM/SFW-Spiders/raw/refs/heads/main/userScripts/ysfp.user.js",
+        "userScript": "https://cdn.jsdelivr.net/gh/CatVodSpider-GM/SFW-Spiders@raw/refs/heads/main/userScripts/ysfp.user.js",
         "debug": false,
         "webViewSettings": {
           "blockNetworkImage": true,
@@ -115,7 +115,7 @@
           }
         }
       },
-      "jar": "https://github.com/CatVodSpider-GM/SFW-Spiders/raw/refs/heads/main/Spiders-Lib/GM.jar"
+      "jar": "https://cdn.jsdelivr.net/gh/CatVodSpider-GM/SFW-Spiders@raw/refs/heads/main/Spiders-Lib/GM.jar"
     },
     {
       "key": "老张直播频道",

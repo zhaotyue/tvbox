@@ -163,14 +163,14 @@
 		{
 			"name": "备用直播一",
 			"type": 0,
-			"url": "https://raw.githubusercontent.com/PizazzGY/TV/master/output/user_result.txt",
+			"url": "https://cdn.jsdelivr.net/gh/PizazzGY/TV@master/output/user_result.txt",
 			"epg": "http://cdn.1678520.xyz/epg/?ch={name}&date={date}",
 			"timeout": 10
 		},
 		{
 			"name": "备用直播二",
 			"type": 0,
-			"url": "https://raw.githubusercontent.com/Guovin/iptv-api/refs/heads/gd/output/result.m3u",
+			"url": "https://cdn.jsdelivr.net/gh/Guovin/iptv-api@refs/heads/gd/output/result.m3u",
 			"epg": "http://cdn.1678520.xyz/epg/?ch={name}&date={date}",
 			"timeout": 10
 		}

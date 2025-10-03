@@ -33,34 +33,10 @@
 			"api": "https://tvbot.ggff.net/uvod"
 		},
 		{
-			"key": "爱瓜TV",
-			"name": "爱瓜TV",
-			"type": 4,
-			"api": "https://tvbot.ggff.net/aigua"
-		},
-		{
 			"key": "小苹果",
 			"name": "小苹果",
 			"type": 4,
 			"api": "https://tvbot.ggff.net/pingguo"
-		},
-		{
-			"key": "独播库",
-			"name": "独播库",
-			"type": 4,
-			"api": "https://tvbot.ggff.net/duboku"
-		},
-		{
-			"key": "欧乐影院",
-			"name": "欧乐影院",
-			"type": 4,
-			"api": "https://tvbot.ggff.net/oule"
-		},
-		{
-			"key": "荐片",
-			"name": "荐片",
-			"type": 4,
-			"api": "https://tvbot.ggff.net/jianpian"
 		},
 		{
 			"key": "金牌影院",
@@ -79,48 +55,6 @@
 			"name": "恰逢永乐",
 			"type": 4,
 			"api": "https://tvbot.ggff.net/yongle"
-		},
-		{
-			"key": "爱壹帆",
-			"name": "爱壹帆",
-			"type": 3,
-			"style": {
-				"type": "rect",
-				"ratio": 0.75
-			},
-			"api": "csp_GM",
-			"ext": {
-				"userScript": "https://v6.gh-proxy.com/https://github.com/CatVodSpider-GM/SFW-Spiders/raw/refs/heads/main/userScripts/ysfp.user.js",
-				"debug": false,
-				"webViewSettings": {
-					"blockNetworkImage": true,
-					"blockList": [
-						"*.png*",
-						"*.mp3*",
-						"*.css*",
-						"https://*.googletagmanager.com/*",
-						"https://*.google-analytics.com/*"
-					]
-				},
-				"spider": {
-					"homeContent": {
-						"loadUrl": "https://m.yfsp.tv/"
-					},
-					"categoryContent": {
-						"loadUrl": "https://m.yfsp.tv/list/${tid}?type=${index-0:-0}${index-1:-,0}${index-2:-,0}${index-3:-,0}${index-4:-,0}${index-5:-}"
-					},
-					"detailContent": {
-						"loadUrl": "https://m.yfsp.tv/play/${id}"
-					},
-					"playerContent": {
-						"loadUrl": "https://m.yfsp.tv/play/${mediaKey}?id=${episodeKey}"
-					},
-					"searchContent": {
-						"loadUrl": "https://m.yfsp.tv/search"
-					}
-				}
-			},
-			"jar": "https://v6.gh-proxy.com/https://github.com/CatVodSpider-GM/SFW-Spiders/raw/refs/heads/main/Spiders-Lib/GM.jar"
 		},
 		{
 			"key": "直播频道",
@@ -181,10 +115,10 @@
 			}
 		},
 		{
-			"key": "py_MrJav",
-			"name": "🔞MRJav",
+			"key": "py_madou",
+			"name": "🔞麻豆",
 			"type": 4,
-			"api": "https://py.doube.eu.org/spider?site=MrJav",
+			"api": "https://py.doube.eu.org/spider?site=MaDou",
 			"searchable": 1,
 			"quickSearch": 0,
 			"filterable": 0,
@@ -195,10 +129,10 @@
 			}
 		},
 		{
-			"key": "py_madou",
-			"name": "🔞麻豆",
+			"key": "py_hstv",
+			"name": "🔞HSTV",
 			"type": 4,
-			"api": "https://py.doube.eu.org/spider?site=MaDou",
+			"api": "https://learnpython.ggff.net/hstv",
 			"searchable": 1,
 			"quickSearch": 0,
 			"filterable": 0,

@@ -134,7 +134,7 @@
 		},
 		{
 			"key": "py_Dm84",
-			"name": "🍋动漫巴士(T4)",
+			"name": "动漫巴士",
 			"type": 4,
 			"api": "https://py.doube.eu.org/spider?site=Dm84",
 			"searchable": 1,
@@ -144,7 +144,7 @@
 		},
 		{
 			"key": "py_BadNews",
-			"name": "🔞BadNews(T4)",
+			"name": "🔞BadNews",
 			"type": 4,
 			"api": "https://py.doube.eu.org/spider?site=BadNews",
 			"searchable": 1,
@@ -158,7 +158,7 @@
 		},
 		{
 			"key": "py_Miss",
-			"name": "🔞MissAV(T4)",
+			"name": "🔞MissAV",
 			"type": 4,
 			"api": "https://py.doube.eu.org/spider?site=Miss",
 			"searchable": 1,
@@ -168,7 +168,7 @@
 		},
 		{
 			"key": "py_AiDou",
-			"name": "🔞AiDou(T4)",
+			"name": "🔞AiDou",
 			"type": 4,
 			"api": "https://py.doube.eu.org/spider?site=AiDou",
 			"searchable": 1,
@@ -182,7 +182,7 @@
 		},
 		{
 			"key": "py_MrJav",
-			"name": "🔞MRJav(T4)",
+			"name": "🔞MRJav",
 			"type": 4,
 			"api": "https://py.doube.eu.org/spider?site=MrJav",
 			"searchable": 1,
@@ -196,7 +196,7 @@
 		},
 		{
 			"key": "py_madou",
-			"name": "🔞麻豆(T4)",
+			"name": "🔞麻豆",
 			"type": 4,
 			"api": "https://py.doube.eu.org/spider?site=MaDou",
 			"searchable": 1,

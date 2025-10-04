@@ -61,20 +61,13 @@
 			"name": "直播频道",
 			"type": 4,
 			"api": "http://zhangqun66.com/zh/2242.php",
-			"searchable": 0,
-			"quickserch": 0,
-			"changeable": 0,
 			"ext": "1,2,3"
 		},
 		{
 			"key": "py_Dm84",
 			"name": "动漫巴士",
 			"type": 4,
-			"api": "https://py.doube.eu.org/spider?site=Dm84",
-			"searchable": 1,
-			"quickSearch": 0,
-			"filterable": 0,
-			"changeable": 0
+			"api": "https://py.doube.eu.org/spider?site=Dm84"
 		},
 		{
 			"key": "py_BadNews",
@@ -116,7 +109,7 @@
 		},
 		{
 			"key": "py_madou",
-			"name": "🔞麻豆",
+			"name": "🔞MaDou",
 			"type": 4,
 			"api": "https://py.doube.eu.org/spider?site=MaDou",
 			"searchable": 1,
@@ -133,20 +126,6 @@
 			"name": "🔞HSTV",
 			"type": 4,
 			"api": "https://learnpython.ggff.net/hsTV",
-			"searchable": 1,
-			"quickSearch": 0,
-			"filterable": 0,
-			"changeable": 0,
-			"style": {
-				"type": "rect",
-				"ratio": 1.5
-			}
-		},
-		{
-			"key": "py_javxx",
-			"name": "🔞javxx",
-			"type": 4,
-			"api": "https://learnpython.ggff.net/javxx",
 			"searchable": 1,
 			"quickSearch": 0,
 			"filterable": 0,

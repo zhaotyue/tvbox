@@ -120,20 +120,6 @@
 				"type": "rect",
 				"ratio": 1.5
 			}
-		},
-		{
-			"key": "py_hstv",
-			"name": "🔞HSTV",
-			"type": 4,
-			"api": "https://learnpython.ggff.net/hsTV",
-			"searchable": 1,
-			"quickSearch": 0,
-			"filterable": 0,
-			"changeable": 0,
-			"style": {
-				"type": "rect",
-				"ratio": 1.5
-			}
 		}
 	],
 	"lives": [{

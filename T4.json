@@ -63,6 +63,12 @@
 			"api": "https://learnpython.ggff.net/xyz"
 		},
 		{
+			"key": "hmdj",
+			"name": "HM短剧",
+			"type": 4,
+			"api": "https://learnpython.ggff.net/HMDJ"
+		},
+		{
 			"key": "2242",
 			"name": "直播频道",
 			"type": 4,

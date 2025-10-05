@@ -1,7 +1,7 @@
 {
 	"wallpaper": "https://深色壁纸.xxooo.cf/",
 	"sites": [{
-			"key": "豆瓣首页",
+			"key": "douban",
 			"name": "豆瓣首页",
 			"type": 4,
 			"api": "https://tvbot.ggff.net/douban",
@@ -9,37 +9,37 @@
 			"searchable": 0
 		},
 		{
-			"key": "电影天堂",
+			"key": "dytt",
 			"name": "电影天堂",
 			"type": 4,
 			"api": "https://tvbot.ggff.net/dytt"
 		},
 		{
-			"key": "4KAV",
+			"key": "4kav",
 			"name": "4KAV",
 			"type": 4,
 			"api": "https://learnpython.ggff.net/4kav"
 		},
 		{
-			"key": "瓜子影视",
+			"key": "guazi",
 			"name": "瓜子影视",
 			"type": 4,
 			"api": "https://tvbot.ggff.net/guazi"
 		},
 		{
-			"key": "优视频",
+			"key": "uvod",
 			"name": "优视频",
 			"type": 4,
 			"api": "https://tvbot.ggff.net/uvod"
 		},
 		{
-			"key": "小苹果",
+			"key": "pingguo",
 			"name": "小苹果",
 			"type": 4,
 			"api": "https://tvbot.ggff.net/pingguo"
 		},
 		{
-			"key": "金牌影院",
+			"key": "jinpai",
 			"name": "金牌影院",
 			"type": 3,
 			"api": "https://tvbot.dpdns.org/py_jinpai.py"
@@ -51,7 +51,7 @@
 			"api": "https://tvbot.ggff.net/jubaba"
 		},
 		{
-			"key": "恰逢永乐",
+			"key": "yongle",
 			"name": "恰逢永乐",
 			"type": 4,
 			"api": "https://tvbot.ggff.net/yongle"
@@ -63,14 +63,14 @@
 			"api": "https://learnpython.ggff.net/xyz"
 		},
 		{
-			"key": "直播频道",
+			"key": "2242",
 			"name": "直播频道",
 			"type": 4,
 			"api": "http://zhangqun66.com/zh/2242.php",
 			"ext": "1,2,3"
 		},
 		{
-			"key": "py_Dm84",
+			"key": "dm84",
 			"name": "动漫巴士",
 			"type": 4,
 			"api": "https://py.doube.eu.org/spider?site=Dm84"

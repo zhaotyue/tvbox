@@ -88,6 +88,12 @@
 			"api": "https://py.doube.eu.org/spider?site=Dm84"
 		},
 		{
+			"key": "cam4",
+			"name": "🔞cam4",
+			"type": 4,
+			"api": "https://learnpython.ggff.net/cam4"
+		},
+		{
 			"key": "py_BadNews",
 			"name": "🔞BadNews",
 			"type": 4,

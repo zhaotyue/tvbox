@@ -174,7 +174,7 @@
         {
 			"name": "易发",
 			"type": 0,
-			"url": "http://tvv.tw/github.com/fafa002/yf2025/blob/main/yiyifafa.txt",
+			"url": "https://cdn.jsdelivr.net/gh/fafa002/yf2025@main/yiyifafa.txt",
 			"epg": "https://epg.v1.mk/json?ch={name}&date={date}",
 			"logo": "https://epg.v1.mk/logo/{name}.png",
 			"timeout": 10

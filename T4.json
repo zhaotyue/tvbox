@@ -175,8 +175,8 @@
 			"name": "易发",
 			"type": 0,
 			"url": "http://tvv.tw/github.com/fafa002/yf2025/blob/main/yiyifafa.txt",
-			"epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-			"logo": "https://live.fanmingming.com/tv/{name}.png",
+			"epg": "http://diyp5.112114.xyz/?ch={name}&date={date}",
+			"logo": "http://diyp5.112114.xyz/{name}.png",
 			"timeout": 10
 		},
 		{
@@ -191,16 +191,16 @@
 			"name": "备用直播一",
 			"type": 0,
 			"url": "https://cdn.jsdelivr.net/gh/PizazzGY/TV@master/output/user_result.txt",
-			"epg": "http://cdn.1678520.xyz/epg/?ch={name}&date={date}",
-			"logo": "https://live.fanmingming.com/tv/{name}.png",
+			"epg": "http://diyp5.112114.xyz/?ch={name}&date={date}",
+			"logo": "http://diyp5.112114.xyz/{name}.png",
 			"timeout": 10
 		},
 		{
 			"name": "备用直播二",
 			"type": 0,
 			"url": "https://cdn.jsdelivr.net/gh/Guovin/iptv-api@refs/heads/gd/output/result.m3u",
-			"epg": "http://cdn.1678520.xyz/epg/?ch={name}&date={date}",
-			"logo": "https://live.fanmingming.com/tv/{name}.png",
+			"epg": "http://diyp5.112114.xyz/?ch={name}&date={date}",
+			"logo": "http://diyp5.112114.xyz/{name}.png",
 			"timeout": 10
 		}
 	],

@@ -27,6 +27,12 @@
 			"api": "https://learnpython.ggff.net/4kvm"
 		},
 		{
+			"key": "shdy",
+			"name": "SHDY",
+			"type": 4,
+			"api": "https://learnpython.ggff.net/shdy"
+		},
+		{
 			"key": "guazi",
 			"name": "瓜子影视",
 			"type": 4,

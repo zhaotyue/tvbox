@@ -94,6 +94,12 @@
 			"api": "https://learnpython.ggff.net/cam4"
 		},
 		{
+			"key": "rou",
+			"name": "🔞Rou",
+			"type": 4,
+			"api": "https://learnpython.ggff.net/py_rou"
+		},
+		{
 			"key": "py_BadNews",
 			"name": "🔞BadNews",
 			"type": 4,

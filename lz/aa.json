@@ -8,12 +8,6 @@
 			"api": "csp_PTT"
 		},
 		{
-			"key": "苹果jar",
-			"name": "苹果jar",
-			"type": 3,
-			"api": "csp_PingGuo"
-		},
-		{
 			"key": "看球",
 			"name": "看球",
 			"type": 3,
@@ -26,8 +20,14 @@
 			"api": "csp_YHDM"
 		},
 		{
+			"key": "苹果jar",
+			"name": "苹果FQ",
+			"type": 3,
+			"api": "csp_PingGuo"
+		},
+		{
 			"key": "jable",
-			"name": "jable",
+			"name": "JableFQ+",
 			"type": 3,
 			"api": "csp_Jable"
 		}

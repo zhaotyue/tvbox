@@ -31,6 +31,12 @@
 			"api": "csp_YHDM"
 		},
 		{
+			"key": "旺旺短剧",
+			"name": "旺旺短剧",
+			"type": 1,
+			"api": "http://zhangqun66.com/ww.php"
+		},
+		{
 			"key": "苹果jar",
 			"name": "苹果FQ",
 			"type": 3,

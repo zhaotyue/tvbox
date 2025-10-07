@@ -45,7 +45,7 @@
 		{
 			"key": "bilibili",
 			"name": "哔哩哔哩",
-			"type": 1,
+			"type": 4,
 			"api": "http://zhangqun66.com/bilibili.php"
 		},
 		{

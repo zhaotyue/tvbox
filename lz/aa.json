@@ -19,10 +19,10 @@
 			"api": "csp_PTT"
 		},
 		{
-			"key": "采集集合",
-			"name": "采集集合",
-			"type": 1,
-			"api": "https://zhangqun66.com/cjjh.php"
+			"key": "pingguo",
+			"name": "小苹果",
+			"type": 4,
+			"api": "http://zhangqun66.com/pingguo.php"
 		},
 		{
 			"key": "看球",

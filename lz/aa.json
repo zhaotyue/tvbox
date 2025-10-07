@@ -19,6 +19,12 @@
 			"api": "csp_PTT"
 		},
 		{
+			"key": "采集集合",
+			"name": "采集集合",
+			"type": 1,
+			"api": "https://zhangqun66.com/cjjh.php"
+		},
+		{
 			"key": "看球",
 			"name": "看球",
 			"type": 3,

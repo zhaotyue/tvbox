@@ -43,6 +43,12 @@
 			"api": "http://zhangqun66.com/ww.php"
 		},
 		{
+			"key": "bilibili",
+			"name": "哔哩哔哩",
+			"type": 1,
+			"api": "http://zhangqun66.com/bilibili.php"
+		},
+		{
 			"key": "苹果jar",
 			"name": "苹果FQ",
 			"type": 3,

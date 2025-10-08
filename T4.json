@@ -87,13 +87,6 @@
 			"api": "https://learnpython.ggff.net/HMDJ"
 		},
 		{
-			"key": "139fm",
-			"name": "139FM",
-			"type": 4,
-			"api": "https://learnpython.ggff.net/139fm",
-			"ext": "1,2,3"
-		},
-		{
 			"key": "2242",
 			"name": "直播频道",
 			"type": 4,

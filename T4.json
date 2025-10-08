@@ -182,6 +182,10 @@
 			"url": "https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt"
 		},
 		{
+			"name": "港台",
+			"url": "https://bxtv.3a.ink/live.m3u"
+		},
+		{
 			"name": "1080",
 			"url": "http://xtvantsc.xyz/1080.m3u"
 		},

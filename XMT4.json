@@ -1,0 +1,211 @@
+[{
+		"id": "dytt",
+		"name": "电影天堂(T4)",
+		"api": "https://tvbot.ggff.net/dytt",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "4kav",
+		"name": "4KAV(T4)",
+		"api": "https://learnpython.ggff.net/4kav",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "4kvm",
+		"name": "4KVM(T4)",
+		"api": "https://learnpython.ggff.net/4kvm",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "shdy",
+		"name": "SHDY(T4)",
+		"api": "https://learnpython.ggff.net/shdy",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "guazi",
+		"name": "瓜子影视(T4)",
+		"api": "https://tvbot.ggff.net/guazi",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "uvod",
+		"name": "优视频(T4)",
+		"api": "https://tvbot.ggff.net/uvod",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "pingguo",
+		"name": "小苹果(T4)",
+		"api": "https://tvbot.ggff.net/pingguo",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "jinpai",
+		"name": "金牌(T4)",
+		"api": "https://learnpython.ggff.net/jinpai",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "jubaba",
+		"name": "剧爸爸(T4)",
+		"api": "https://tvbot.ggff.net/jubaba",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "yongle",
+		"name": "永乐影视(T4)",
+		"api": "https://tvbot.ggff.net/yongle",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "xyz",
+		"name": "XYZ影院(T4)",
+		"api": "https://learnpython.ggff.net/xyz",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "huoche",
+		"name": "火车影视(T4)",
+		"api": "https://learnpython.ggff.net/huoche",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "hmdj",
+		"name": "HM短剧(T4)",
+		"api": "https://learnpython.ggff.net/HMDJ",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "2242",
+		"name": "老张直播(T4)",
+		"api": "http://zhangqun66.com/zh/2242.php",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "dm84",
+		"name": "动漫巴士(T4)",
+		"api": "https://py.doube.eu.org/spider?site=Dm84",
+		"nsfw": false,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "91RB",
+		"name": "🔞91RB(T4)",
+		"api": "https://learnpython.ggff.net/91RB",
+		"nsfw": true,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "cam4",
+		"name": "🔞CAM4(T4)",
+		"api": "https://learnpython.ggff.net/cam4",
+		"nsfw": true,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "BadNews",
+		"name": "🔞BadNews(T4)",
+		"api": "https://py.doube.eu.org/spider?site=BadNews",
+		"nsfw": true,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "Miss",
+		"name": "🔞MissAV(T4)",
+		"api": "https://py.doube.eu.org/spider?site=Miss",
+		"nsfw": true,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "AiDou",
+		"name": "🔞AiDou(T4)",
+		"api": "https://py.doube.eu.org/spider?site=AiDou",
+		"nsfw": true,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	},
+	{
+		"id": "MaDou",
+		"name": "🔞MaDou(T4)",
+		"api": "https://py.doube.eu.org/spider?site=MaDou",
+		"nsfw": true,
+		"type": 1,
+		"extra": {
+			"template": "t4"
+		}
+	}
+]

@@ -11,6 +11,10 @@
 			"url": "https://iptv.catvod.com/tv.m3u"
 		},
 		{
+			"name": "港台",
+			"url": "https://bxtv.3a.ink/live.m3u"
+		},
+		{
 			"name": "catvod(备用)",
 			"type": 0,
 			"url": "https://live.catvod.com/tv.m3u"

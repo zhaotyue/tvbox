@@ -188,7 +188,13 @@
 		{
 			"name": "港台(备用)",
 			"url": "https://bxtv.3a.ink/live.m3u"
-		},		
+		},
+		{
+			"name": "4GTV",
+			"url": "http://xtvantsc.xyz/litv_ts.php",
+			"epg": "http://diyp5.112114.xyz/?ch={name}&date={date}",
+			"logo": "http://diyp5.112114.xyz/{name}.png"
+		},
 		{
 			"name": "1080",
 			"url": "http://xtvantsc.xyz/1080.m3u"

@@ -98,8 +98,7 @@
 			"name": "动漫巴士",
 			"type": 4,
 			"api": "https://py.doube.eu.org/spider?site=Dm84"
-		}
-		,
+		},
 		{
 			"key": "91RB",
 			"name": "🔞91RB",
@@ -172,10 +171,11 @@
 		}
 	],
 	"lives": [{
-			"name": "冰茶直播",
+			"name": "冰茶",
 			"type": 0,
-			"url": "https://fy.188766.xyz/?ip=&mishitong=true&mima=mianfeidehaimaiqian&json=true",
-			"ua": "bingcha/1.1"
+			"playerType": 2,
+			"url": "https://fy.188766.xyz/?ip=&mishitong=true&mima=mianfeidehaimaiqian&huikan=1&json=true",
+			"ua": "bingcha/1.1 (mianfeifenxiang) "
 		},
 		{
 			"name": "咪咕直播",
@@ -214,7 +214,7 @@
 				"Referer": "https://p.lioncdn.net/"
 			}
 		},
-        {
+		{
 			"name": "易发",
 			"type": 0,
 			"url": "https://cdn.jsdelivr.net/gh/fafa002/yf2025@main/yiyifafa.txt",

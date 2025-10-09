@@ -18,7 +18,7 @@
 			"url": "http://xtvantsc.xyz/litv_ts.php",
 			"epg": "http://diyp5.112114.xyz/?ch={name}&date={date}",
 			"logo": "http://diyp5.112114.xyz/{name}.png"
-		}
+		},
 		{
 			"name": "catvod",
 			"type": 0,

@@ -12,7 +12,7 @@
 			"key": "dytt",
 			"name": "电影天堂",
 			"type": 4,
-			"api": "https://tvbot.ggff.net/dytt"
+			"api": "https://py.doube.eu.org/spider?site=DianYingTanTang"
 		},
 		{
 			"key": "4kav",

@@ -48,7 +48,7 @@
 			"key": "pingguo",
 			"name": "小苹果",
 			"type": 4,
-			"api": "https://tvbot.ggff.net/pingguo"
+			"api": "https://learnpython.ggff.net/pingguo"
 		},
 		{
 			"key": "jinpai",
@@ -60,13 +60,13 @@
 			"key": "剧爸爸",
 			"name": "剧爸爸",
 			"type": 4,
-			"api": "https://tvbot.ggff.net/jubaba"
+			"api": "https://learnpython.ggff.net/py_jubaba"
 		},
 		{
 			"key": "yongle",
 			"name": "恰逢永乐",
 			"type": 4,
-			"api": "https://tvbot.ggff.net/yongle"
+			"api": "https://learnpython.ggff.net/yongle"
 		},
 		{
 			"key": "xyz",

@@ -1890,13 +1890,14 @@
     "ads": [
         "static-mozai.4gtv.tv"
     ],
-    "lives": [{
-			"name": "冰茶",
-			"type": 0,
-			"playerType": 2,
-			"url": "https://fy.188766.xyz/?ip=&mishitong=true&mima=mianfeidehaimaiqian&huikan=1&json=true",
-			"ua": "bingcha/1.1 (mianfeifenxiang) "
-		},
+    "lives": [
+        {
+            "name": "冰茶",
+            "type": 0,
+            "playerType": 2,
+            "url": "https://fy.188766.xyz/?ip=&mishitong=true&mima=mianfeidehaimaiqian&huikan=1&json=true",
+            "ua": "bingcha/1.1 (mianfeifenxiang) "
+        },
         {
             "name": "港台",
             "url": "https://php.946985.filegear-sg.me/jackTV.m3u"

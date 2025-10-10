@@ -15,7 +15,7 @@
             "key": "hohaiemby",
             "name": "HohaiEMBY",
             "type": 3,
-            "api": "./PY/emby.py",
+            "api": "https://cdn.jsdelivr.net/gh/ediart/tvbox@main/lz/emby.py",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,

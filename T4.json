@@ -36,18 +36,6 @@
 			"api": "https://learnpython.ggff.net/shdy"
 		},
 		{
-			"key": "guazi",
-			"name": "瓜子影视",
-			"type": 4,
-			"api": "https://tvbot.ggff.net/guazi"
-		},
-		{
-			"key": "uvod",
-			"name": "优视频",
-			"type": 4,
-			"api": "https://tvbot.ggff.net/uvod"
-		},
-		{
 			"key": "pingguo",
 			"name": "小苹果",
 			"type": 4,

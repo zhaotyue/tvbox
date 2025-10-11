@@ -1129,6 +1129,20 @@
             "ext": "https://xl01.com.de"
         },
         {
+            "key": "UC云盘",
+            "name": "我的｜UC",
+            "type": 3,
+            "api": "csp_PanUc",
+            "searchable": 0,
+            "filterable": 0,
+            "changeable": 0,
+            "style": {
+                "type": "list",
+                "ratio": 1.433
+            },
+            "ext": "./json/ucShare.json"
+        },
+        {
             "key": "88看球",
             "name": "88｜看球",
             "type": 3,
@@ -1137,6 +1151,15 @@
             "style": {
                 "type": "list"
             }
+        },
+        {
+            "key": "戏曲多多",
+            "name": "戏曲｜多多",
+            "type": 3,
+            "api": "csp_AppLY",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
         },
         {
             "key": "网络直播",
